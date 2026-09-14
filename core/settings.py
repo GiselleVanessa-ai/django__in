@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-tg!e8)gz0cn3qko9iy7*nxa_ggc8gl__+6qy71j#koj8r=q)!2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "templates"],
+        'DIRS': [BASE_DIR / "templates"], #templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -102,7 +102,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/6.1/topics/i18n/
 
-LANGUAGE_CODE = 'es-co'
+LANGUAGE_CODE = 'es-co' #lemguaje
 
 TIME_ZONE = 'America/Bogota'
 
@@ -114,15 +114,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = 'static/' #c
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATIICFILES_DIRS = [BASE_DIR/"static/"]
 
 
 #media
 
-MEDIA_URL = "/media/"
-MEDIA/ROOT = BASE_DIR / "media"
+MEDIA_URL = "/media/" #d
+MEDIA_ROOT = BASE_DIR / "media"
 
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
